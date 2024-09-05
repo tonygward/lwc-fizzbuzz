@@ -47,6 +47,8 @@ describe('c-fizz-buzz', () => {
     });
 });
 
+// #region Helpers
+
 async function setInput(element, input) {
     element.input = input;
     await flushPromises();
@@ -69,3 +71,5 @@ function getResult(element) {
 async function flushPromises() {
     return Promise.resolve();
 }
+
+// #endregion
